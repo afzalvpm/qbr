@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QUBERCOMM</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<!-- fav icon -->
+	<link rel="shortcut icon" href="images/fav.png">
+
+	<!-- css -->
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+	<style type="text/css">
+	.highcharts-axis text{
+		display: none;
+	}
+	</style>
+</head>
+<body>
+	<!-- header -->
+	<section id="header">
+		<!-- Fixed navbar -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid pad-left-0">
+				<div class="navbar-header">
+					<button type="button" class="toggle-align navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="sideToggle-icon" class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2">
+						<span class="fa fa-bars pull-left"> 
+						</span>
+					</a>
+					<a class="navbar-brand" href="#">
+						<img src="images/header/logo.png">
+					</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<div class="nav navbar-nav nav-left header-dd sub-category1">
+						<ul class="list-unstyled list-catg">
+							<li class="dropdown list-d">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">XYZ Stadium <span class="caret"></span></a>
+								<ul class="dropdown-menu list-catg-dropdown">
+									<li><a href="#">View all Venues</a></li>
+									<li><a href="#">Add new Venues</a></li>
+									<li><a href="#">ABC Golf course</a></li>
+									<li><a href="#">XYZ Stadium</a></li>
+								</ul>
+							</li>
+							<li class="dropdown list-d">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">New Floor Plan<span class="caret"></span></a>
+								<ul class="dropdown-menu list-catg-dropdown">
+									<li><a href="#">View all FloorPlans</a></li>
+									<li><a href="#">Add new Floorplan</a></li>
+									<li><a href="#">Floor 1</a></li>
+									<li><a href="#">Floor 2</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown profile-dash">
+							<a href="#" class="pad0 dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+								<img src="images/header/user.png" class="profile-circle"/>
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu profile-dash-menu profile-dropDown">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</nav>
+	</section>
+	<!-- end of header -->
+
+	<!-- side bar -->
+	<section id="wrapper" class="toggled-2">
+		<!-- Sidebar -->
+		<div id="sidebar-wrapper">
+			<ul class="sidebar-nav nav-pills nav-stacked  nav-seller" id="menu">
+				<li class="user-pic">
+					<a href="#">
+						<span class="fa-stack fa-lg pull-left">
+							<img src="images/header/user.png" alt="">
+						</span> 
+						<span class="sb-name">John Doe</span>
+					</a>
+				</li>
+				<li class="active">
+					<hr>
+					<a href="#"><span class="fa-stack fa-lg pull-left"><img src="images/sidebar/sb1.png" alt=""></span> 
+						<span class="sb-name">Overview</span>
+					</a>
+				</li>
+				<li>
+					<hr>
+					<a href="#"><span class="fa-stack fa-lg pull-left"><img src="images/sidebar/sb2.png" alt=""></span> 
+						<span class="sb-name">Activity</span>
+					</a>
+					<ul class="nav-pills nav-stacked sub-nav-stacked" style="list-style-type:none;">
+						<li>
+							<a href="#">
+								<span class="sb-name">Network Config</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="sb-name">Network Map</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="sb-name">Floorplan Setup</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<hr>
+					<a href="#"><span class="fa-stack fa-lg pull-left"><img src="images/sidebar/sb3.png" alt=""></span>
+						<span class="sb-name">Venue Settings</span>
+					</a>
+					<ul class="nav-pills nav-stacked sub-nav-stacked" style="list-style-type:none;">
+						<li>
+							<a href="#">
+								<span class="sb-name">Network Config</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="sb-name">Network Map</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="sb-name">Floorplan Setup</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<hr>
+					<a href="#"> <span class="fa-stack fa-lg pull-left"><img src="images/sidebar/sb4.png" alt=""></span>
+						<span class="sb-name">Logs</span>
+					</a>
+				</li>
+			</ul>
+		</div> <!-- #sidebar-wrapper -->
+		<div id="page-content-wrapper">
+			<!-- sunburst chart -->
+			<div class="venue-section1">
+				<div class="col-md-8">
+					<div class="sunburstChartSection">
+						<div class="sunburstChart">
+							<div class="expandClass">
+								<img src="images/flooroverview/expand.png">
+							</div>
+							<div id="sbtChart"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="venus-chart1 venus-chart-common">
+						<div class="chart1">
+							<div class="netflowData select-filter-Plan venue-filter">
+								<label>Netflow</label>
+							</div>
+							<div class="chart1Section">
+								<div id="chart_div1" style="height: 270px;margin-right:10px"></div>
+							</div>
+						</div>
+					</div>
+					<div class="venus-chart1 venus-chart-common">
+						<div class="chart1">
+							<div class="select-filter-Plan venue-filter">
+								<select class="form-control ">
+									<option selected="">PEER TX/RX AVG. BYTES</option>
+									<option>LAST 10 MINUTES </option>
+									<option>LAST 5 MINUTES </option>
+									<option>LAST 20 MINUTES </option>
+									<option>LAST 25 MINUTES </option>
+								</select>
+							</div>
+							<div class="chart1Section">
+								<div id="chart_div2" style="height: 270px;margin-right:10px"></div>
+							</div>
+						</div>
+					</div>
+					<div class="venus-chart1 venus-chart-common">
+						<div class="device-coon-desc">
+							<label>32455 Device Connected</label>
+						</div>
+						<div class="chart1Section">
+							<div id="piechart" style="height: 220px;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row venue-section2">
+				<div class="col-md-8">
+					<div class="addvenueCommon venue-status-recent">
+						<div class="recent-activities">
+							<div class="recent-heading">
+								<ul class="list-unstyled margin-btm-0">
+									<li class="dropdown profile-dash">
+										<a href="#" class="pad0 dropdown-toggle recent-heading-data" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+											Recent Activities
+											<span class="caret"></span>
+										</a>
+										<ul class="dropdown-menu profile-dash-menu">
+											<li><a href="#">Action</a></li>
+											<li><a href="#">Another action</a></li>
+											<li><a href="#">Action</a></li>
+											<li><a href="#">Another action</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="recentDataSection scrollbar-inner" tabindex="0" style="overflow: hidden; outline: none;">
+								<div class="recent-venue">
+									<div class="recent-data">
+										<p>
+											<label>Floorplan 1</label> created in 
+											<span>ABC Golfcourse</span>
+										</p>
+										<label class="pull-right venue-time">Today at 1:45 pm</label>
+									</div>
+								</div>
+								<div class="recent-venue">
+									<div class="recent-data">
+										<p>
+											<label>Floorplan 1</label> created in 
+											<span>ABC Golfcourse</span>
+										</p>
+										<label class="pull-right venue-time">Today at 1:45 pm</label>
+									</div>
+								</div>
+								<div class="recent-venue">
+									<div class="recent-data">
+										<p>
+											<label>Floorplan 1</label> created in 
+											<span>ABC Golfcourse</span>
+										</p>
+										<label class="pull-right venue-time">Today at 1:45 pm</label>
+									</div>
+								</div>
+								<div class="recent-venue">
+									<div class="recent-data">
+										<p>
+											<label>Floorplan 1</label> created in 
+											<span>ABC Golfcourse</span>
+										</p>
+										<label class="pull-right venue-time">Today at 1:45 pm</label>
+									</div>
+								</div>
+								<div class="recent-venue">
+									<div class="recent-data">
+										<p>
+											<label>Floorplan 1</label> created in 
+											<span>ABC Golfcourse</span>
+										</p>
+										<label class="pull-right venue-time">Today at 1:45 pm</label>
+									</div>
+								</div>
+								<div class="recent-venue">
+									<div class="recent-data">
+										<p>
+											<label>Floorplan 1</label> created in 
+											<span>ABC Golfcourse</span>
+										</p>
+										<label class="pull-right venue-time">Today at 1:45 pm</label>
+									</div>
+								</div>
+							</div>
+							<div class="view-log">
+								<label class="pull-right display-inline">View Log</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="addvenueCommon summarysectionAlign summary-section">
+						<div class="recent-activities">
+							<div class="recent-heading">
+								<ul class="list-unstyled margin-btm-0">
+									<li class="dropdown profile-dash">
+										Summary
+									</li>
+								</ul>
+							</div>
+							<div class="recentDataSection scrollbar-inner" tabindex="0" style="overflow: hidden; outline: none;">
+								<div class="recent-venue">
+									<div class="recent-data">
+										<p>
+											Active Server
+										</p>
+										<label class="pull-right venue-time">Today at 1:45 pm</label>
+									</div>
+								</div>
+								<div class="recent-venue">
+									<div class="recent-data">
+										<p>
+											Active Server
+										</p>
+										<label class="pull-right venue-time">Today at 1:45 pm</label>
+									</div>
+								</div>
+								<div class="recent-venue">
+									<div class="recent-data">
+										<p>
+											Active Server
+										</p>
+										<label class="pull-right venue-time">Today at 1:45 pm</label>
+									</div>
+								</div>
+								<div class="recent-venue">
+									<div class="recent-data">
+										<p>
+											Active Server
+										</p>
+										<label class="pull-right venue-time">Today at 1:45 pm</label>
+									</div>
+								</div>
+								<div class="recent-venue">
+									<div class="recent-data">
+										<p>
+											Active Server
+										</p>
+										<label class="pull-right venue-time">Today at 1:45 pm</label>
+									</div>
+								</div>
+								<div class="recent-venue">
+									<div class="recent-data">
+										<p>
+											Active Server
+										</p>
+										<label class="pull-right venue-time">Today at 1:45 pm</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+
+
+	<!-- js -->
+	<script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/highcharts.js"></script>
+	<script type="text/javascript" src="js/jquery.niceScroll.min.js"></script>
+	<script type="text/javascript" src="js/jquery.appear.js"></script>
+	<script src="js/d3.v3.min.js"></script>
+	<script src="js/jquery.canvasjs.min.js"></script>
+	<script src="js/script.js"></script>  
+
+	<!-- NiceScroll -->
+	<script type="text/javascript">
+	$(document).ready(
+		function() { 
+			$(".scrollbar-inner").niceScroll({
+				cursorcolor:"#2496d8",
+				cursoropacitymin: 1,
+				cursoropacitymax: 1,
+				cursorwidth: "4px",
+				cursorborder: "1px solid #2496d8",
+				cursorborderradius: "0px",
+			});
+		});
+	</script>
+	<!-- graph -->
+	<script type="text/javascript">
+
+	
+	/*Curved chart*/
+	CanvasJS.addColorSet("colorset",
+            [//colorSet Array
+            "#8DDF83",
+            "#3C97D0",
+            ]);	
+	$('#chart_div2').CanvasJSChart(
+	{
+		exportEnabled: false,
+		creditText: "",
+		creditRef: "",
+		animationEnabled: true,
+		title: {
+			text: ""
+		},
+		legend: {
+			fontSize:17,
+			cursor: "default",
+			verticalAlign: "top",
+			horizontalAlign: "right",
+
+		},
+		axisX:{
+			tickLength: 10,
+			tickColor: '#FFF',
+    		// minimum: 8,
+    		lineThickness: 0,
+    		gridThickness: 0,
+    		margin: 15,
+    		intervalType: 'year',
+    		labelFormatter: function(e){
+    			return  e.value+1940;
+    		}
+    	},
+    	axisY:{
+    		tickLength: 0,
+    		lineThickness: 0,
+    		gridThickness: 0,
+    		margin: 15,
+    		labelFormatter: function(e){
+    			return  e.value/1000 +'k';
+    		}
+    	},
+
+    	colorSet: "colorset",
+    	data: [
+    	{
+			type: "splineArea", //change it to line, area, bar, pie, etc
+			showInLegend: true,
+			lineThickness: 0,
+			fillOpacity: .8,
+			legendMarkerType: "square",
+			legendText: "TX",
+			markerType: "none",
+			dataPoints: [
+			{ y: 10342,label: 2000 },{ y: 12342 },{ y: 14123 },{ y: 12231 },{ y: 12329 },
+			{ y: 14231 },{ y: 26123 },{ y: 10124 },{ y: 22234 },{ y: 25393},{ y: 27395},
+			{ y: 30000},{ y: 27000},{ y: 14765},{ y: 18736},{ y: 10000},{ y: 23451},
+			{ y: 12000},{ y: 7000},{ y: 19000},{ y: 25393},
+			]
+		},
+		{
+			type: "splineArea",
+			showInLegend: true,
+			fillOpacity: .8,
+			legendMarkerType: "square",
+			legendText: "RX",
+			markerType: "none",
+			dataPoints:[
+			{ y: 25393},{ y: 27395},{ y: 30000},{ y: 27000},{ y: 14765},{ y: 18736},
+			{ y: 10000},{ y: 23451},{ y: 12000},{ y: 7000},{ y: 19000},{ y: 25393},
+			{ y: 10342},{ y: 12342 },{ y: 14123 },{ y: 12231 },{ y: 2329 },
+			{ y: 14231 },{ y: 26123 },{ y: 10124 },{ y: 22234 },
+			]
+		},
+		]
+	});
+
+	//Area chart
+	CanvasJS.addColorSet("colorset",
+		[
+		"#37C6F4",
+		"#4FC586",
+		"#F14E5A",
+		"#F79449",
+		]);	
+
+	$('#chart_div1').CanvasJSChart({
+		exportEnabled: false,
+		creditText: "",
+		creditRef: "",
+		animationEnabled: true,
+		title: {
+			text: "",
+		},
+		legend: {
+			fontFamily: 'arial',
+			fontSize:17,
+			cursor: "default",
+			verticalAlign: "top",
+			horizontalAlign: "right",
+		},
+		axisX:{
+			tickLength: 10,
+			tickColor: '#FFF',
+    		// minimum: 8,
+    		lineThickness: 0,
+    		gridThickness: 0,
+    		margin: 15,
+    		valueFormatString:  "hh.mmtt" ,
+    		labelFormatter: function(e){
+    			return  CanvasJS.formatDate( new Date(), "hh mm tt");
+    		},
+    		labelAngle: -89,
+    	},
+    	axisY:{
+    		tickLength: 0,
+    		lineThickness: 0,
+    		gridThickness: 0,
+    		margin: 15,
+    	},
+    	colorSet: "colorset",
+    	data: [
+    	{
+			type: "area", //change it to line, area, bar, pie, etc
+			showInLegend: true,
+			fillOpacity: .8,
+			legendMarkerType: "square",
+			legendText: "Downtime",
+			markerType: "none",
+			dataPoints: [
+			{ y: 3000},{ y: 3000 },{ y: 3000 },{ y: 3000 },{ y: 3329 },{ y: 3000},{ y: 3000 },{ y: 3000 },{ y: 3300 },{ y: 3329 },
+			{ y: 3000},{ y: 3000 },{ y: 4000 },{ y: 3000 },{ y: 3329 },
+			]
+		},
+		{
+			type: "area",
+			showInLegend: true,
+			fillOpacity: .8,
+			legendMarkerType: "square",
+			legendText: "Total",
+			markerType: "none",
+			dataPoints:[
+			{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: 3000},{ y: 11000 },{ y: 13000 },{ y: 15000 },{ y: 20329 },
+			]
+		},
+		{
+			type: "area",
+			showInLegend: true,
+			fillOpacity: .8,
+			legendMarkerType: "square",
+			legendText: "www",
+			markerType: "none",
+			dataPoints:[
+			{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: 20000},{ y: 21000 },{ y: 17000 },{ y: 31000 },{ y: 28329 },{ y: 33000},{ y: 32000 },{ y: 40000 },{ y: 21000 },{ y: 18329 },{ y: 20000},{ y: 21000 },{ y: 19000 },{ y: 21000 },{ y: 18329 },
+			{ y: 20000},{ y: 21000 },{ y: 17000 },{ y: 31000 },{ y: 28329 },{ y: 33000},{ y: 32000 },{ y: 40000 },{ y: 38000 },{ y: 41329 },{ y: 39000},{ y: 40000 },{ y: 36000 },{ y: 39000 },{ y: 42329 },
+			{ y: 20000},{ y: 21000 },{ y: 17000 },{ y: 31000 },{ y: 28329 },{ y: 33000},{ y: 32000 },{ y: 40000 },{ y: 21000 },{ y: 18329 },{ y: 20000},{ y: 21000 },{ y: 19000 },{ y: 21000 },{ y: 18329 },
+			{ y: 20000},{ y: 21000 },{ y: 17000 },{ y: 31000 },{ y: 28329 },{ y: 33000},{ y: 32000 },{ y: 40000 },{ y: 38000 },{ y: 41329 },{ y: 39000},{ y: 40000 },{ y: 36000 },{ y: 39000 },{ y: 42329 },
+			{ y: 20000},{ y: 21000 },{ y: 17000 },{ y: 31000 },{ y: 28329 },{ y: 33000},{ y: 32000 },{ y: 40000 },{ y: 21000 },{ y: 18329 },{ y: 20000},{ y: 21000 },{ y: 19000 },{ y: 21000 },{ y: 18329 },
+			]
+		},
+		{
+			type: "area",
+			showInLegend: true,
+			fillOpacity: .8,
+			legendMarkerType: "square",
+			legendText: "Chat",
+			markerType: "none",
+			dataPoints:[
+			{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},
+			{ y: 18000 },{ y: 22000 },{ y: 18000 },{ y: 21000 },{ y: 17110 },{ y: 30000 },{ y: 31000 },{ y: 31500 },{ y: 32000 },{ y: 31000 },{ y: 20010 },{ y: 10 },{ y: 10 },
+			]
+		},
+		],
+	});
+
+//Pie Chart
+CanvasJS.addColorSet("colorset",['#85d1fb', '#f14e5a', '#f79449', '#df7d5c', '#df7d5c', '#f1f494', '#79d58a']);	
+$('#piechart').CanvasJSChart(
+{
+	title:{
+		text: ""
+	},
+	width: this.width-250,
+	animationEnabled: true,
+	legend: {
+		fontSize:17,
+		dockInsidePlotArea: false,
+		cursor: "default",
+		verticalAlign: "center",
+		horizontalAlign: "right",
+	},
+	data: [
+	{        
+		type: "pie",   
+			// fillOpacity: .6,    
+			showInLegend: true,
+			startAngle: -90,
+			toolTipContent: "{y} - <strong>#percent%</strong>",
+			legendMarkerType: "square",
+			dataPoints: [
+			{  y: 40, legendText:"2478 Android",},
+			{  y: 20, legendText:"235 Mac OS",},
+			{  y: 20, legendText:"100 iOS",},
+			{  y: 20, legendText:"Others" ,},
+			{  y: 20, legendText:"Blackberry",},
+			{  y: 40, legendText:"Windows" },
+			]
+		}
+		]
+	});
+</script>
+
+
+</body>
+</html>

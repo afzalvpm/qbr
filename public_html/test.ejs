@@ -1,0 +1,18 @@
+<html>
+<head>
+	<title>test</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+</head>
+<body>
+<p data-abc="<%= tagline %>"><%= tagline %></p>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+        var x = $("#uid").text(); 
+        alert(x);  // now JS variable 'x' has the uid that's passed from the node backend.
+    });
+</script>
+<h2 style="display:none;" id="uid"><%=tagline %></h2>
+</body>
+</html>

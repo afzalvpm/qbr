@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QUBERCOMM</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<!-- fav icon -->
+	<link rel="shortcut icon" href="images/fav.png">
+
+	<!-- css -->
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/buttons.css">
+
+	<style type="text/css">
+	.highcharts-axis text{
+		display: none;
+	}
+	</style>
+</head>
+<body>
+	<!-- header -->
+	<section id="header">
+		<!-- Fixed navbar -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid pad-left-0">
+				<div class="navbar-header">
+					<button type="button" class="toggle-align navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="sideToggle-icon" class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2">
+						<span class="fa fa-bars pull-left"> 
+						</span>
+					</a>
+					<a class="navbar-brand" href="#">
+						<img src="images/header/logo.png">
+					</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<div class="nav navbar-nav nav-left header-dd sub-category1">
+						<ul class="list-unstyled list-catg">
+							<li class="dropdown list-d">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">XYZ Stadium <span class="caret"></span></a>
+								<ul class="dropdown-menu list-catg-dropdown">
+									<li><a href="#">View all Venues</a></li>
+									<li><a href="#">Add new Venues</a></li>
+									<li><a href="#">ABC Golf course</a></li>
+									<li><a href="#">XYZ Stadium</a></li>
+								</ul>
+							</li>
+							<li class="dropdown list-d">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">New Floor Plan<span class="caret"></span></a>
+								<ul class="dropdown-menu list-catg-dropdown">
+									<li><a href="#">View all FloorPlans</a></li>
+									<li><a href="#">Add new Floorplan</a></li>
+									<li><a href="#">Floor 1</a></li>
+									<li><a href="#">Floor 2</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown profile-dash">
+							<a href="#" class="pad0 dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+								<img src="images/header/user.png" class="profile-circle"/>
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu profile-dash-menu profile-dropDown">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</nav>
+	</section>
+	<!-- end of header -->
+
+	<!-- side bar -->
+	<section id="wrapper" class="toggled-2">
+		<!-- Sidebar -->
+		<div id="sidebar-wrapper">
+			<ul class="sidebar-nav nav-pills nav-stacked  nav-seller" id="menu">
+				<li class="user-pic">
+					<a href="#">
+						<span class="fa-stack fa-lg pull-left">
+							<img src="images/header/user.png" alt="">
+						</span> 
+						<span class="sb-name">John Doe</span>
+					</a>
+				</li>
+				<li class="active">
+					<hr>
+					<a href="#"><span class="fa-stack fa-lg pull-left"><img src="images/sidebar/sb1.png" alt=""></span> 
+						<span class="sb-name">Overview</span>
+					</a>
+				</li>
+				<li>
+					<hr>
+					<a href="#"><span class="fa-stack fa-lg pull-left"><img src="images/sidebar/sb2.png" alt=""></span> 
+						<span class="sb-name">Activity</span>
+					</a>
+					<ul class="nav-pills nav-stacked sub-nav-stacked" style="list-style-type:none;">
+						<li>
+							<a href="#">
+								<span class="sb-name">Network Config</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="sb-name">Network Map</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="sb-name">Floorplan Setup</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<hr>
+					<a href="#"><span class="fa-stack fa-lg pull-left"><img src="images/sidebar/sb3.png" alt=""></span>
+						<span class="sb-name">Venue Settings</span>
+					</a>
+					<ul class="nav-pills nav-stacked sub-nav-stacked" style="list-style-type:none;">
+						<li>
+							<a href="#">
+								<span class="sb-name">Network Config</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="sb-name">Network Map</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="sb-name">Floorplan Setup</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<hr>
+					<a href="#"> <span class="fa-stack fa-lg pull-left"><img src="images/sidebar/sb4.png" alt=""></span>
+						<span class="sb-name">Logs</span>
+					</a>
+				</li>
+			</ul>
+		</div><!-- #sidebar-wrapper -->
+		<div id="page-content-wrapper">
+			<div class="addvenuePage">
+				<div class="container-fluid">
+					<div class="venue-Details display-inline">
+						<div class="NoOfVenues display-inline">
+							<label>3 VENUES</label>
+						</div>
+						<div class="addVenue display-inline">
+							<button class="btn btn-default btn-config">ADD VENUE</button>
+						</div>
+					</div>
+					<div class="add-floorPlan-form pull-right display-inline search-venues">
+						<div class="form-group marBtm-0">
+							<div class="inner-addon right-addon search-input display-inline">
+								<i class="glyphicon glyphicon-search"></i>
+								<input type="text" class="form-control" id="exampleInputName2" placeholder="Search Venue...">
+							</div>
+						</div>
+					</div>
+					<div class="row addVenueForm">
+						<div class="col-md-6 padmob">
+							<form>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Venue Title">
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Venue Address">
+								</div>
+								<textarea class="form-control" rows="7" placeholder="Description"></textarea>
+								<div class="save-section pull-right addVenueBtn">
+									<button class="btn btn-default btn-save button button--aylen button--inverted width-120">CANCEL</button>
+									<button class="btn btn-default btn-config button button--aylen button--inverted width-120">SAVE</button>
+								</div>
+							</form>
+						</div>
+						<div class="col-md-6 padmob">
+							<div class="map-embed">
+								<div style="overflow:hidden;width: 100%;height: 323px;resize:none;max-width:100%;">
+									<div id="google-maps-canvas" style="height:100%; width:100%;max-width:100%;">
+										<iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=M+G+Road,+KG+Halli,+Bangalore,+Karnataka,+India&amp;key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- online -->
+					<div class="venue-course">
+						<div class="venue-source">
+							<div class="network-heading display-inline ">
+								<label>Online</label>
+								<span class="caret"></span>
+							</div>
+						</div>
+						<div class="venue-details-section row">
+							<div class="col-md-12 venue-details">
+								<div class="view-details">
+									<ul>
+										<li>
+											<label class="venue-name">ABC GOLF COURSE</label>
+										</li>
+										<li>
+											<label class="view-dashboard">View Dashboard</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-5">
+								<div class="chart1 addvenueCommon">
+									<div class="select-filter-Plan venue-filter">
+										<label>PEER TX/RX AVG. BYTES</label>
+									</div>
+									<div class="chart1Section">
+										<div id="chart_div1" style="height: 290px;margin-right:10px;"></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="alert-carousel addvenueCommon">
+									<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+										<!-- Indicators -->
+										<ol class="carousel-indicators">
+											<li data-target="#carousel-example-generic" data-slide-to="0" ></li>
+											<li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li>
+											<li data-target="#carousel-example-generic" data-slide-to="2" ></li>
+										</ol>
+
+										<!-- Wrapper for slides -->
+										<div class="carousel-inner" role="listbox">
+											<div class="item">
+												<div class="carousel-caption">
+													<label> All Systems Idle </label>
+												</div>
+												<img src="images/venue/correct.gif" alt="alert">
+											</div>
+											<div class="item active">
+												<div class="carousel-caption">
+													<label>3 Alerts</label>
+												</div>
+												<div class="center-carousel">
+													<img src="images/venue/alert.gif" class="alert-gif" alt="alert">
+												</div>
+											</div>
+											<div class="item">
+												<div class="carousel-caption">
+													<label> Devices Connected</label>
+												</div>
+												<div class="circle-chart">
+													<div id="demo-pie-1" class="pie-title-center" data-percent="75">
+														<span id="pie-value1" class="pie-value"></span> 
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<!-- recent activities -->
+								<div class="addvenueCommon recent-activities hide">
+									<div class="recent-heading">
+										<ul class="list-unstyled margin-btm-0">
+											<li class="dropdown profile-dash">
+												<a href="#" class="pad0 dropdown-toggle recent-heading-data" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+													Recent Activities
+													<span class="caret"></span>
+												</a>
+												<ul class="dropdown-menu profile-dash-menu">
+													<li><a href="#">Action</a></li>
+													<li><a href="#">Another action</a></li>
+													<li><a href="#">Action</a></li>
+													<li><a href="#">Another action</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+									<div class="recentDataSection scrollbar-inner">
+										<div class="recent-venue">
+											<div class="recent-data">
+												<p>
+													<label>Floorplan 1</label> created in 
+													<span>ABC Golfcourse</span>
+												</p>
+												<label class="pull-right venue-time">Today at 1:45 pm</label>
+											</div>
+										</div>
+										<div class="recent-venue">
+											<div class="recent-data">
+												<p>
+													<label>Floorplan 1</label> created in 
+													<span>ABC Golfcourse</span>
+												</p>
+												<label class="pull-right venue-time">Today at 1:45 pm</label>
+											</div>
+										</div>
+										<div class="recent-venue">
+											<div class="recent-data">
+												<p>
+													<label>Floorplan 1</label> created in 
+													<span>ABC Golfcourse</span>
+												</p>
+												<label class="pull-right venue-time">Today at 1:45 pm</label>
+											</div>
+										</div>
+										<div class="recent-venue">
+											<div class="recent-data">
+												<p>
+													<label>Floorplan 1</label> created in 
+													<span>ABC Golfcourse</span>
+												</p>
+												<label class="pull-right venue-time">Today at 1:45 pm</label>
+											</div>
+										</div>
+										<div class="recent-venue">
+											<div class="recent-data">
+												<p>
+													<label>Floorplan 1</label> created in 
+													<span>ABC Golfcourse</span>
+												</p>
+												<label class="pull-right venue-time">Today at 1:45 pm</label>
+											</div>
+										</div>
+										<div class="recent-venue">
+											<div class="recent-data">
+												<p>
+													<label>Floorplan 1</label> created in 
+													<span>ABC Golfcourse</span>
+												</p>
+												<label class="pull-right venue-time">Today at 1:45 pm</label>
+											</div>
+										</div>
+									</div>
+									<div class="view-log">
+										<label class="pull-right display-inline">View Log</label>
+									</div>
+								</div>
+								<!-- recent alert -->
+								<div class="RecentAlerts addvenueCommon recent-activities">
+									<div class="recent-heading">
+										<ul class="list-unstyled margin-btm-0">
+											<li class="dropdown profile-dash">
+												<a href="#" class="pad0 dropdown-toggle recent-heading-data" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+													Recent Alerts
+													<span class="caret"></span>
+												</a>
+												<ul class="dropdown-menu profile-dash-menu">
+													<li><a href="#">Action</a></li>
+													<li><a href="#">Another action</a></li>
+													<li><a href="#">Action</a></li>
+													<li><a href="#">Another action</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+									<div class="recentDataSection scrollbar-inner">
+										<div class="recent-venue">
+											<div class="recent-data">
+												<p>
+													<label>Floorplan 1</label> created in 
+													<span>ABC Golfcourse</span>
+												</p>
+												<label class="pull-right venue-time">Today at 1:45 pm</label>
+											</div>
+										</div>
+										<div class="recent-venue">
+											<div class="recent-data">
+												<p>
+													<label>Floorplan 1</label> created in 
+													<span>ABC Golfcourse</span>
+												</p>
+												<label class="pull-right venue-time">Today at 1:45 pm</label>
+											</div>
+										</div>
+										<div class="recent-venue">
+											<div class="recent-data">
+												<p>
+													<label>Floorplan 1</label> created in 
+													<span>ABC Golfcourse</span>
+												</p>
+												<label class="pull-right venue-time">Today at 1:45 pm</label>
+											</div>
+										</div>
+										<div class="recent-venue">
+											<div class="recent-data">
+												<p>
+													<label>Floorplan 1</label> created in 
+													<span>ABC Golfcourse</span>
+												</p>
+												<label class="pull-right venue-time">Today at 1:45 pm</label>
+											</div>
+										</div>
+										<div class="recent-venue">
+											<div class="recent-data">
+												<p>
+													<label>Floorplan 1</label> created in 
+													<span>ABC Golfcourse</span>
+												</p>
+												<label class="pull-right venue-time">Today at 1:45 pm</label>
+											</div>
+										</div>
+										<div class="recent-venue">
+											<div class="recent-data">
+												<p>
+													<label>Floorplan 1</label> created in 
+													<span>ABC Golfcourse</span>
+												</p>
+												<label class="pull-right venue-time">Today at 1:45 pm</label>
+											</div>
+										</div>
+									</div>
+									<div class="view-log">
+										<label class="pull-right display-inline">View Alerts</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="venue-details-section row">
+							<div class="col-md-12 venue-details">
+								<div class="view-details">
+									<ul>
+										<li>
+											<label class="venue-name">ABC GOLF COURSE</label>
+										</li>
+										<li>
+											<label class="view-dashboard">View Dashboard </label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-5">
+								<div class="chart1 addvenueCommon">
+									<div class="select-filter-Plan venue-filter">
+										<label>PEER TX/RX AVG. BYTES</label>
+									</div>
+									<div class="chart1Section">
+										<div id="chart_div2" style="height: 290px;margin-right:10px;"></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="addvenueCommon alert-carousel">
+									<div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
+										<!-- Indicators -->
+										<ol class="carousel-indicators">
+											<li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
+											<li data-target="#carousel-example-generic1" data-slide-to="1"></li>
+											<li data-target="#carousel-example-generic1" data-slide-to="2" ></li>
+										</ol>
+
+										<!-- Wrapper for slides -->
+										<div class="carousel-inner" role="listbox">
+											<div class="item active">
+												<img src="images/venue/correct.gif">
+												<div class="carousel-caption">
+													<label> All System Healthy </label>
+												</div>
+											</div>
+											<div class="item">
+												<div class="center-carousel">
+													<img src="images/venue/alert.gif" class="alert-gif" alt="alert">
+												</div>
+												<div class="carousel-caption">
+													<label>3 Alerts</label>
+												</div>
+											</div>
+											<div class="item ">
+												<div class="circle-chart">
+													<div id="demo-pie-2" class="pie-title-center" data-percent="75">
+														<span id="pie-value2" class="pie-value"></span> 
+													</div>
+												</div>
+												<div class="carousel-caption">
+													<label> Devices Connected</label>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="addvenueCommon recent-activities">
+									<div class="recent-heading">
+										<ul class="list-unstyled margin-btm-0">
+											<li class="dropdown profile-dash">
+												<a href="#" class="pad0 dropdown-toggle recent-heading-data" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+													Recent Activities
+													<span class="caret"></span>
+												</a>
+												<ul class="dropdown-menu profile-dash-menu">
+													<li><a href="#">Action</a></li>
+													<li><a href="#">Another action</a></li>
+													<li><a href="#">Action</a></li>
+													<li><a href="#">Another action</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+									<div class="recentDataSection scrollbar-inner">
+										<div class="recent-venue">
+											<div class="recent-data">
+												<p>
+													<label>Floorplan 1</label> created in 
+													<span>ABC Golfcourse</span>
+												</p>
+												<label class="pull-right venue-time">Today at 1:45 pm</label>
+											</div>
+										</div>
+										<div class="recent-venue">
+											<div class="recent-data">
+												<p>
+													<label>Floorplan 1</label> created in 
+													<span>ABC Golfcourse</span>
+												</p>
+												<label class="pull-right venue-time">Today at 1:45 pm</label>
+											</div>
+										</div>
+										<div class="recent-venue">
+											<div class="recent-data">
+												<p>
+													<label>Floorplan 1</label> created in 
+													<span>ABC Golfcourse</span>
+												</p>
+												<label class="pull-right venue-time">Today at 1:45 pm</label>
+											</div>
+										</div>
+										<div class="recent-venue">
+											<div class="recent-data">
+												<p>
+													<label>Floorplan 1</label> created in 
+													<span>ABC Golfcourse</span>
+												</p>
+												<label class="pull-right venue-time">Today at 1:45 pm</label>
+											</div>
+										</div>
+										<div class="recent-venue">
+											<div class="recent-data">
+												<p>
+													<label>Floorplan 1</label> created in 
+													<span>ABC Golfcourse</span>
+												</p>
+												<label class="pull-right venue-time">Today at 1:45 pm</label>
+											</div>
+										</div>
+										<div class="recent-venue">
+											<div class="recent-data">
+												<p>
+													<label>Floorplan 1</label> created in 
+													<span>ABC Golfcourse</span>
+												</p>
+												<label class="pull-right venue-time">Today at 1:45 pm</label>
+											</div>
+										</div>
+									</div>
+									<div class="view-log">
+										<label class="pull-right display-inline">VIEW LOG</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- js -->
+	<script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/d3.v3.min.js"></script>
+	<script src="js/pie-chart.js"></script>
+	<script type="text/javascript" src="js/jquery.appear.js"></script>
+	<script type="text/javascript" src="js/jquery.niceScroll.min.js"></script>
+	<script type="text/javascript" src="js/jquery.canvasjs.min.js"></script>
+	<script src="js/script.js"></script>  
+
+	<!-- graph javascript -->
+	<script type="text/javascript">
+	CanvasJS.addColorSet("colorset",
+            [//colorSet Array
+            "#8DDF83",
+            "#3C97D0",
+            ]);	
+	$('#chart_div1').CanvasJSChart(
+	{
+		exportEnabled: false,
+		creditText: "",
+		creditRef: "",
+		animationEnabled: true,
+		title: {
+			text: ""
+		},
+		legend: {
+			fontSize:17,
+			cursor: "default",
+			verticalAlign: "top",
+			horizontalAlign: "right",
+
+		},
+		axisX:{
+			tickLength: 10,
+			tickColor: '#FFF',
+			lineThickness: 0,
+			gridThickness: 0,
+			margin: 15,
+			intervalType: 'year',
+			labelFormatter: function(e){
+				return  e.value+1940;
+			}
+		},
+		axisY:{
+			tickLength: 0,
+			lineThickness: 0,
+			gridThickness: 0,
+			margin: 15,
+			labelFormatter: function(e){
+				return  e.value/1000 +'k';
+			}
+		},
+
+		colorSet: "colorset",
+		data: [
+		{
+			type: "splineArea", 
+			showInLegend: true,
+			lineThickness: 0,
+			fillOpacity: .8,
+			legendMarkerType: "square",
+			legendText: "2G",
+			markerType: "none",
+			dataPoints: [
+			{ y: 10342,label: 2000 },{ y: 12342 },{ y: 14123 },{ y: 12231 },{ y: 12329 },
+			{ y: 14231 },{ y: 26123 },{ y: 10124 },{ y: 22234 },{ y: 25393},{ y: 27395},
+			{ y: 30000},{ y: 27000},{ y: 14765},{ y: 18736},{ y: 10000},{ y: 23451},
+			{ y: 12000},{ y: 7000},{ y: 19000},{ y: 25393},
+			]
+		},
+		{
+			type: "splineArea",
+			showInLegend: true,
+			fillOpacity: .8,
+			legendMarkerType: "square",
+			legendText: "5G",
+			markerType: "none",
+			dataPoints:[
+			{ y: 25393},{ y: 27395},{ y: 30000},{ y: 27000},{ y: 14765},{ y: 18736},
+			{ y: 10000},{ y: 23451},{ y: 12000},{ y: 7000},{ y: 19000},{ y: 25393},
+			{ y: 10342},{ y: 12342 },{ y: 14123 },{ y: 12231 },{ y: 2329 },
+			{ y: 14231 },{ y: 26123 },{ y: 10124 },{ y: 22234 },
+			]
+		},
+		]
+	});
+CanvasJS.addColorSet("colorset",
+            [//colorSet Array
+            "#8DDF83",
+            "#3C97D0",
+            ]);	
+$('#chart_div2').CanvasJSChart(
+{
+	exportEnabled: false,
+	creditText: "",
+	creditRef: "",
+	animationEnabled: true,
+	title: {
+		text: ""
+	},
+	legend: {
+		fontSize:17,
+		cursor: "default",
+		verticalAlign: "top",
+		horizontalAlign: "right",
+
+	},
+	axisX:{
+		tickLength: 10,
+		tickColor: '#FFF',
+		lineThickness: 0,
+		gridThickness: 0,
+		margin: 15,
+		intervalType: 'year',
+		labelFormatter: function(e){
+			return  e.value+1940;
+		}
+	},
+	axisY:{
+		tickLength: 0,
+		lineThickness: 0,
+		gridThickness: 0,
+		margin: 15,
+		labelFormatter: function(e){
+			return  e.value/1000 +'k';
+		}
+	},
+
+	colorSet: "colorset",
+	data: [
+	{
+		type: "splineArea", 
+		showInLegend: true,
+		lineThickness: 0,
+		fillOpacity: .8,
+		legendMarkerType: "square",
+		legendText: "2G",
+		markerType: "none",
+		dataPoints: [
+		{ y: 10342,label: 2000 },{ y: 12342 },{ y: 14123 },{ y: 12231 },{ y: 12329 },
+		{ y: 14231 },{ y: 26123 },{ y: 10124 },{ y: 22234 },{ y: 25393},{ y: 27395},
+		{ y: 30000},{ y: 27000},{ y: 14765},{ y: 18736},{ y: 10000},{ y: 23451},
+		{ y: 12000},{ y: 7000},{ y: 19000},{ y: 25393},
+		]
+	},
+	{
+		type: "splineArea",
+		showInLegend: true,
+		fillOpacity: .8,
+		legendMarkerType: "square",
+		legendText: "5G",
+		markerType: "none",
+		dataPoints:[
+		{ y: 25393},{ y: 27395},{ y: 30000},{ y: 27000},{ y: 14765},{ y: 18736},
+		{ y: 10000},{ y: 23451},{ y: 12000},{ y: 7000},{ y: 19000},{ y: 25393},
+		{ y: 10342},{ y: 12342 },{ y: 14123 },{ y: 12231 },{ y: 2329 },
+		{ y: 14231 },{ y: 26123 },{ y: 10124 },{ y: 22234 },
+		]
+	},
+	]
+});
+CanvasJS.addColorSet("colorset",
+            [//colorSet Array
+            "#8DDF83",
+            "#3C97D0",
+            ]);	
+</script>
+
+<!-- NiceScroll -->
+<script type="text/javascript">
+$(document).ready(
+	function() { 
+		$(".scrollbar-inner").niceScroll({
+			cursorcolor:"#2496d8",
+			cursoropacitymin: 1,
+			cursoropacitymax: 1,
+			cursorwidth: "4px",
+			cursorborder: "1px solid #2496d8",
+			cursorborderradius: "0px",
+		});
+	});
+</script>
+<script type="text/javascript">
+$('#demo-pie-1').pieChart({
+	barColor: '#38a96f',
+	trackColor: '#b3b3b3',
+	lineCap: 'round',
+	lineWidth: 14,
+	animate: {
+		duration: 3500,
+		enabled: true
+	},
+
+	onStep: function (from, to, percent) {
+		var obj = document.getElementById('pie-value1');
+		obj.innerText = Math.round(percent);
+	}
+});
+$('#demo-pie-2').pieChart({
+	barColor: '#38a96f',
+	trackColor: '#b3b3b3',
+	lineCap: 'round',
+	lineWidth: 14,
+	animate: {
+		duration: 3500,
+		enabled: true
+	},
+
+	onStep: function (from, to, percent) {
+		var obj = document.getElementById('pie-value2');
+		obj.innerText = Math.round(percent);
+	}
+});
+$('#demo-pie-3').pieChart({
+	barColor: '#38a96f',
+	trackColor: '#b3b3b3',
+	lineCap: 'round',
+	lineWidth: 14,
+	animate: {
+		duration: 3500,
+		enabled: true
+	},
+
+	onStep: function (from, to, percent) {
+		var obj = document.getElementById('pie-value3');
+		obj.innerText = Math.round(percent);
+	}
+});
+</script>
+<script>
+new WOW().init();
+</script>
+
+</body>
+</html>

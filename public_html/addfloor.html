@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QUBERCOMM</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<!-- fav icon -->
+	<link rel="shortcut icon" href="images/fav.png">
+
+	<!-- css -->
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/buttons.css">
+
+	<style type="text/css">
+	.highcharts-axis text{
+		display: none;
+	}
+	</style>
+</head>
+<body>
+	<!-- header -->
+	<section id="header">
+		<!-- Fixed navbar -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid pad-left-0">
+				<div class="navbar-header">
+					<button type="button" class="toggle-align navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="sideToggle-icon" class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2">
+						<span class="fa fa-bars pull-left"> 
+						</span>
+					</a>
+					<a class="navbar-brand" href="#">
+						<img src="images/header/logo.png">
+					</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<div class="nav navbar-nav nav-left header-dd sub-category1">
+						<ul class="list-unstyled list-catg">
+							<li class="dropdown list-d">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">XYZ Stadium <span class="caret"></span></a>
+								<ul class="dropdown-menu list-catg-dropdown">
+									<li><a href="#">View all Venues</a></li>
+									<li><a href="#">Add new Venues</a></li>
+									<li><a href="#">ABC Golf course</a></li>
+									<li><a href="#">XYZ Stadium</a></li>
+								</ul>
+							</li>
+							<li class="dropdown list-d">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">New Floor Plan<span class="caret"></span></a>
+								<ul class="dropdown-menu list-catg-dropdown">
+									<li><a href="#">View all FloorPlans</a></li>
+									<li><a href="#">Add new Floorplan</a></li>
+									<li><a href="#">Floor 1</a></li>
+									<li><a href="#">Floor 2</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown profile-dash">
+							<a href="#" class="pad0 dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+								<img src="images/header/user.png" class="profile-circle"/>
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu profile-dash-menu profile-dropDown">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</nav>
+	</section>
+	<!-- end of header -->
+
+	<!-- side bar -->
+	<section id="wrapper" class="toggled-2">
+		<!-- Sidebar -->
+		<div id="sidebar-wrapper">
+			<ul class="sidebar-nav nav-pills nav-stacked  nav-seller" id="menu">
+				<li class="user-pic">
+					<a href="#">
+						<span class="fa-stack fa-lg pull-left">
+							<img src="images/header/user.png" alt="">
+						</span> 
+						<span class="sb-name">John Doe</span>
+					</a>
+				</li>
+				<li class="active">
+					<hr>
+					<a href="#"><span class="fa-stack fa-lg pull-left"><img src="images/sidebar/sb1.png" alt=""></span> 
+						<span class="sb-name">Overview</span>
+					</a>
+				</li>
+				<li>
+					<hr>
+					<a href="#"><span class="fa-stack fa-lg pull-left"><img src="images/sidebar/sb2.png" alt=""></span> 
+						<span class="sb-name">Activity</span>
+					</a>
+					<ul class="nav-pills nav-stacked sub-nav-stacked" style="list-style-type:none;">
+						<li>
+							<a href="#">
+								<span class="sb-name">Network Config</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="sb-name">Network Map</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="sb-name">Floorplan Setup</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<hr>
+					<a href="#"><span class="fa-stack fa-lg pull-left"><img src="images/sidebar/sb3.png" alt=""></span>
+						<span class="sb-name">Venue Settings</span>
+					</a>
+					<ul class="nav-pills nav-stacked sub-nav-stacked" style="list-style-type:none;">
+						<li>
+							<a href="#">
+								<span class="sb-name">Network Config</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="sb-name">Network Map</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="sb-name">Floorplan Setup</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<hr>
+					<a href="#"> <span class="fa-stack fa-lg pull-left"><img src="images/sidebar/sb4.png" alt=""></span>
+						<span class="sb-name">Logs</span>
+					</a>
+				</li>
+			</ul>
+		</div> <!-- #sidebar-wrapper -->
+		<div id="page-content-wrapper">
+			<div class="floorplan-tab ">
+				<div class="padmob container">
+					<div class="floorPlan-section">
+						<div class="col-md-5">
+							<div class="floorPlan-details">
+								<div class="floorplan-heading newfloorplan network-heading marTop-10">
+									<label>NETWORK FLOORPLAN IN XYZ STADIUM</label>
+								</div>
+								<div class="floorPlan-form">
+									<form>
+										<label>Floorplan Details</label>
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Floorplan Title (e.g. Floor Name)">
+										</div>
+										<textarea class="form-control" rows="7" placeholder="Description"></textarea>
+										<label class="marTop-20">Built-up Area Dimensions</label>
+										<div class="plan-inline display-inline width100">
+											<div class="form-group display-inline width35">
+												<input type="text" class="form-control" placeholder="Length">
+											</div>
+											<div class="form-group display-inline width35">
+												<input type="text" class="form-control" placeholder="Breadth">
+											</div>
+											<select class="form-control display-inline">
+												<option selected="">Meters</option>
+												<option>Testing</option>
+												<option>Testing</option>
+												<option>Testing</option>
+												<option>Testing</option>
+											</select>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-7">
+							<div class="save-section pull-right">
+								<button class="btn btn-default btn-config button button--aylen button--inverted btn-crop js-crop">SAVE & CONFIGURE</button>
+							</div>
+							<div class="upload-section">
+								<div class="add-floorPlan-form">
+									<label>Add Floorplan</label>
+								</div>
+								<div class="addFloorTab">
+									<ul class="list-unstyled">
+										<li class="active">
+											<img src="images/addvenue/upload.png">
+											UPLOAD
+										</li>
+										<li>
+											<img src="images/addvenue/search.png">
+											SEARCH
+										</li>
+									</ul>
+								</div>
+								<div class="floorPlanUpload">
+									<img id="uploadedimg">
+									<div class="overlay-inner"></div>
+									<input style="display:none" type="file" id="floorimg" />
+									<div class="upload-notes">
+										<div class="drop-area text-center">
+											<img src="images/addvenue/plus.png">
+											<label>Upload Floorplan <br>(jpg,png)</label>
+										</div>
+									</div>
+									<label class="uplaod-notes pull-right">
+										Minimum image dimensions: 3000px X 3000px
+									</label>
+								</div>
+								<div class="floorPlanOptions">
+									<span class="display-inline floorPlan-title">Floorplan123.jpg</span>
+									<ul class="list-unstyled pull-right display-inline">
+										<li>
+											<label>
+												<img src="images/addvenue/delete.png">
+											</label>
+											<span>Delete</span>
+										</li>
+										<li>
+											<label>
+												<img src="images/addvenue/duplicate.png">
+											</label>
+											<span>Duplicate</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- js -->
+	<script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/script.js"></script>  
+
+	<!-- upload js -->
+	<script type="text/javascript">
+	// upload 
+
+	$(".upload-notes").on("click",function(e){
+		$("#floorimg").click();
+	});
+	$("#floorimg").on("change",function(){
+		readURL(this);
+	})
+
+	function readURL(input) {
+		if($(input).val()){
+			if (input.files && input.files[0]) {
+				var reader = new FileReader();
+
+				reader.onload = function (e) {
+					$('#uploadedimg')
+					.attr('src', e.target.result);
+				};
+
+				reader.readAsDataURL(input.files[0]);
+			}
+			$(".upload-notes").css("display","none");
+			$(".overlay-inner").css("display","inline");
+			$(".floorPlanUpload").css("background-color:grey;");
+		}
+	}
+
+	$('.js-crop').on('click', function(){
+		var crop_canvas,
+		left = $('.overlay-inner').offset().left - $('#uploadedimg').offset().left ,
+		top =  $('.overlay-inner').offset().top - $('#uploadedimg').offset().top,
+		width = $('.overlay-inner').width(),
+		height =$('.overlay-inner').height();
+
+		crop_canvas = document.createElement('canvas');
+		crop_canvas.width = width;
+		crop_canvas.height = height;
+		var image = document.getElementById("uploadedimg");
+        //alert(left+" "+top)
+        
+        //
+        var img = $('#uploadedimg');
+        var naturalWidth = document.getElementById("uploadedimg").naturalWidth;
+        ratio = naturalWidth / img.width();
+        rh = document.getElementById("uploadedimg").naturalHeight / img.height()
+        left = left * ratio;
+        top = top * rh;
+        window.current_x = width * ratio;
+        window.current_y = height * rh;
+        //alert(window.current_x+" "+window.current_y)
+        //
+        
+        
+        crop_canvas.getContext('2d').drawImage(image, left, top, window.current_x, window.current_y,0,0,width,height);
+        image.src=crop_canvas.toDataURL("image/png");
+        //window.open(crop_canvas.toDataURL("image/png"));
+    });
+
+$('#uploadedimg').mousemove(function(event) {
+        //
+        
+        var img = $('#uploadedimg');
+        var naturalWidth = document.getElementById("uploadedimg").naturalWidth;
+        ratio = naturalWidth / img.width();
+        rh = document.getElementById("uploadedimg").naturalHeight / img.height()
+        console.log((event.pageX - img.offset().left)+" rh "+(event.pageY - img.offset().top))
+        window.current_x = (event.pageX - img.offset().left) * ratio;
+        window.current_y = (event.pageY - img.offset().top) * rh;
+        
+        window.current_coords = window.current_x + ', ' + window.current_y;
+        //console.log(window.current_coords); 
+    });
+
+$("#floorlength").on("input",function(){
+	$('.overlay-inner').css("width",$("#floorlength").val()+"%");
+});
+$("#floorbreadth").on("input",function(){
+	$('.overlay-inner').css("height",$("#floorbreadth").val()+"%");
+});
+
+$( ".overlay-inner" ).draggable({
+	containment: $("#uploadedimg")
+});
+
+$( ".overlay-inner" ).resizable({aspectRatio: true ,maxHeight: $(".floorPlanUpload").height(),maxWidth: $(".floorPlanUpload").width(),minHeight:50,minWidth:50});
+
+
+</script>
+
+
+</body>
+</html>

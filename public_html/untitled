@@ -1,0 +1,17 @@
+								<li>
+									<div class="device-name">
+										<label>
+											<i class="fa fa-2x fa-angle-down" aria-hidden="true"></i>
+											<img src="images/networkconfig/server.png">
+										</label>
+										<span>
+											Server 1
+										</span>
+										<label class="connected device-status pull-right">
+											<span>Online</span>
+										</label>
+									</div>
+									<ul class="child list-unstyled">
+									</ul>
+
+									</li>

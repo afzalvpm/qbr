@@ -1,0 +1,231 @@
+{
+ "name": "Floor",
+ "children": [
+  
+  {
+   "name": "Floor 1",
+   "children": [
+    {"name": "Server 1", "size": 600,"children": [
+      {"name": "Switch 1", "size": 200},
+      {"name": "Switch 2", "size": 330}
+     
+     ]},
+    {"name": "Server 2", "size": 550,"children": [
+      {"name": "Switch 1", "size": 100,"children":[
+          {"name": "AP 1", "size": 100,"children":[
+            {"name": "SNR 1", "size": 100},
+            {"name": "SNR 2", "size": 100},
+            {"name": "SNR 3", "size": 100},
+            {"name": "SNR 4", "size": 100}
+
+            ]},
+          {"name": "AP 2", "size": 100,"children":[
+            {"name": "SNR 1", "size": 100},
+            {"name": "SNR 2", "size": 100},
+            {"name": "SNR 3", "size": 100},
+            {"name": "SNR 4", "size": 100}
+
+            ]},
+          {"name": "AP 3", "size": 100,"children":[
+            {"name": "SNR 1", "size": 100},
+            {"name": "SNR 2", "size": 100},
+            {"name": "SNR 3", "size": 100},
+            {"name": "SNR 4", "size": 100}
+
+            ]},
+          {"name": "AP 1", "size": 100,"children":[
+            {"name": "SNR 1", "size": 100},
+            {"name": "SNR 2", "size": 100},
+            {"name": "SNR 3", "size": 100},
+            {"name": "SNR 4", "size": 100}
+
+            ]}
+
+        ]},
+      {"name": "Switch 2", "size": 100,"children":[
+          {"name": "AP 1", "size": 100,"children":[
+            {"name": "SNR 1", "size": 100},
+            {"name": "SNR 2", "size": 100},
+            {"name": "SNR 3", "size": 100},
+            {"name": "SNR 4", "size": 100}
+
+            ]},
+          {"name": "AP 2", "size": 100,"children":[
+            {"name": "SNR 1", "size": 100},
+            {"name": "SNR 2", "size": 100},
+            {"name": "SNR 3", "size": 100},
+            {"name": "SNR 4", "size": 100}
+
+            ]},
+          {"name": "AP 3", "size": 100,"children":[
+            {"name": "SNR 1", "size": 100},
+            {"name": "SNR 2", "size": 100},
+            {"name": "SNR 3", "size": 100},
+            {"name": "SNR 4", "size": 100}
+
+            ]},
+          {"name": "AP 1", "size": 100,"children":[
+            {"name": "SNR 1", "size": 100},
+            {"name": "SNR 2", "size": 100},
+            {"name": "SNR 3", "size": 100},
+            {"name": "SNR 4", "size": 100}
+
+            ]}
+
+        ]}
+     
+     ]}
+   ]
+  },
+    {
+   "name": "Floor 2",
+   "children": [
+    {"name": "Server 1", "size": 600,"children": [
+      {"name": "Switch 1", "size": 200},
+      {"name": "Switch 2", "size": 330}
+     
+     ]},
+    {"name": "Server 2", "size": 550,"children": [
+      {"name": "Switch 1", "size": 100,"children":[
+          {"name": "AP 1", "size": 100,"children":[
+            {"name": "SNR 1", "size": 100},
+            {"name": "SNR 2", "size": 100},
+            {"name": "SNR 3", "size": 100},
+            {"name": "SNR 4", "size": 100}
+
+            ]},
+          {"name": "AP 2", "size": 100,"children":[
+            {"name": "SNR 1", "size": 100},
+            {"name": "SNR 2", "size": 100},
+            {"name": "SNR 3", "size": 100},
+            {"name": "SNR 4", "size": 100}
+
+            ]},
+          {"name": "AP 3", "size": 100,"children":[
+            {"name": "SNR 1", "size": 100},
+            {"name": "SNR 2", "size": 100},
+            {"name": "SNR 3", "size": 100},
+            {"name": "SNR 4", "size": 100}
+
+            ]},
+          {"name": "AP 1", "size": 100,"children":[
+            {"name": "SNR 1", "size": 100},
+            {"name": "SNR 2", "size": 100},
+            {"name": "SNR 3", "size": 100},
+            {"name": "SNR 4", "size": 100}
+
+            ]}
+
+        ]},
+      {"name": "Switch 2", "size": 100,"children":[
+          {"name": "AP 1", "size": 100,"children":[
+            {"name": "SNR 1", "size": 100},
+            {"name": "SNR 2", "size": 100},
+            {"name": "SNR 3", "size": 100},
+            {"name": "SNR 4", "size": 100}
+
+            ]},
+          {"name": "AP 2", "size": 100,"children":[
+            {"name": "SNR 1", "size": 100},
+            {"name": "SNR 2", "size": 100},
+            {"name": "SNR 3", "size": 100},
+            {"name": "SNR 4", "size": 100}
+
+            ]},
+          {"name": "AP 3", "size": 100,"children":[
+            {"name": "SNR 1", "size": 100},
+            {"name": "SNR 2", "size": 100},
+            {"name": "SNR 3", "size": 100},
+            {"name": "SNR 4", "size": 100}
+
+            ]},
+          {"name": "AP 1", "size": 100,"children":[
+            {"name": "SNR 1", "size": 100},
+            {"name": "SNR 2", "size": 100},
+            {"name": "SNR 3", "size": 100},
+            {"name": "SNR 4", "size": 100}
+
+            ]}
+
+        ]}
+     
+     ]}
+   ]
+  },
+    {
+   "name": "Floor 3",
+   "children": [
+    {"name": "Server 1", "size": 600,"children": [
+      {"name": "Switch 1", "size": 200},
+      {"name": "Switch 2", "size": 330}
+     
+     ]},
+    {"name": "Server 2", "size": 550,"children": [
+      {"name": "Switch 1", "size": 100,"children":[
+          {"name": "AP 1", "size": 100,"children":[
+            {"name": "SNR 1", "size": 100},
+            {"name": "SNR 2", "size": 100},
+            {"name": "SNR 3", "size": 100},
+            {"name": "SNR 4", "size": 100}
+
+            ]},
+          {"name": "AP 2", "size": 100,"children":[
+            {"name": "SNR 1", "size": 100},
+            {"name": "SNR 2", "size": 100},
+            {"name": "SNR 3", "size": 100},
+            {"name": "SNR 4", "size": 100}
+
+            ]},
+          {"name": "AP 3", "size": 100,"children":[
+            {"name": "SNR 1", "size": 100},
+            {"name": "SNR 2", "size": 100},
+            {"name": "SNR 3", "size": 100},
+            {"name": "SNR 4", "size": 100}
+
+            ]},
+          {"name": "AP 1", "size": 100,"children":[
+            {"name": "SNR 1", "size": 100},
+            {"name": "SNR 2", "size": 100},
+            {"name": "SNR 3", "size": 100},
+            {"name": "SNR 4", "size": 100}
+
+            ]}
+
+        ]},
+      {"name": "Switch 2", "size": 100,"children":[
+          {"name": "AP 1", "size": 100,"children":[
+            {"name": "SNR 1", "size": 100},
+            {"name": "SNR 2", "size": 100},
+            {"name": "SNR 3", "size": 100},
+            {"name": "SNR 4", "size": 100}
+
+            ]},
+          {"name": "AP 2", "size": 100,"children":[
+            {"name": "SNR 1", "size": 100},
+            {"name": "SNR 2", "size": 100},
+            {"name": "SNR 3", "size": 100},
+            {"name": "SNR 4", "size": 100}
+
+            ]},
+          {"name": "AP 3", "size": 100,"children":[
+            {"name": "SNR 1", "size": 100},
+            {"name": "SNR 2", "size": 100},
+            {"name": "SNR 3", "size": 100},
+            {"name": "SNR 4", "size": 100}
+
+            ]},
+          {"name": "AP 1", "size": 100,"children":[
+            {"name": "SNR 1", "size": 100},
+            {"name": "SNR 2", "size": 100},
+            {"name": "SNR 3", "size": 100},
+            {"name": "SNR 4", "size": 100}
+
+            ]}
+
+        ]}
+     
+     ]}
+   ]
+  }
+ ]
+}

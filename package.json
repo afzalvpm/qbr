@@ -1,0 +1,23 @@
+{
+  "name": "qubercomm",
+  "version": "1.0.0",
+  "description": "qubercomm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "qubercomm",
+    "floor",
+    "plans"
+  ],
+  "author": "cartoon mango",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.4.2",
+    "express": "^4.13.4",
+    "jquery": "^3.0.0",
+    "jquery-ui": "^1.10.5",
+    "multer": "^1.1.0"
+  }
+}

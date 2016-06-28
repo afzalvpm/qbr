@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QUBERCOMM</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<!-- fav icon -->
+	<link rel="shortcut icon" href="images/fav.png">
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<style type="text/css">
+	.highcharts-axis text{
+		display: none;
+	}
+	</style>
+
+</head>
+<body>
+	<!-- header -->
+	<section id="header">
+		<!-- Fixed navbar -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid pad-left-0">
+				<div class="navbar-header">
+					<button type="button" class="toggle-align navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="sideToggle-icon" class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2">
+						<span class="fa fa-bars pull-left"> 
+						</span>
+					</a>
+					<a class="navbar-brand" href="#">
+						<img src="images/header/logo.png">
+					</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<div class="nav navbar-nav nav-left header-dd sub-category1">
+						<ul class="list-unstyled list-catg">
+							<li class="dropdown list-d">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">XYZ Stadium <span class="caret"></span></a>
+								<ul class="dropdown-menu list-catg-dropdown">
+									<li><a href="#">View all Venues</a></li>
+									<li><a href="#">Add new Venues</a></li>
+									<li><a href="#">ABC Golf course</a></li>
+									<li><a href="#">XYZ Stadium</a></li>
+								</ul>
+							</li>
+							<li class="dropdown list-d">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">New Floor Plan<span class="caret"></span></a>
+								<ul class="dropdown-menu list-catg-dropdown">
+									<li><a href="#">View all FloorPlans</a></li>
+									<li><a href="#">Add new Floorplan</a></li>
+									<li><a href="#">Floor 1</a></li>
+									<li><a href="#">Floor 2</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown profile-dash">
+							<a href="#" class="pad0 dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+								<img src="images/header/user.png" class="profile-circle"/>
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu profile-dash-menu profile-dropDown">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</nav>
+	</section>
+	<!-- end of header -->
+
+	<!-- side bar -->
+	<section id="wrapper" class="toggled-2">
+		<!-- Sidebar -->
+		<div id="sidebar-wrapper">
+			<ul class="sidebar-nav nav-pills nav-stacked  nav-seller" id="menu">
+				<li class="user-pic">
+					<a href="#">
+						<span class="fa-stack fa-lg pull-left">
+							<img src="images/header/user.png" alt="">
+						</span> 
+						<span class="sb-name">John Doe</span>
+					</a>
+				</li>
+				<li class="active">
+					<hr>
+					<a href="#"><span class="fa-stack fa-lg pull-left"><img src="images/sidebar/sb1.png" alt=""></span> 
+						<span class="sb-name">Overview</span>
+					</a>
+				</li>
+				<li>
+					<hr>
+					<a href="#"><span class="fa-stack fa-lg pull-left"><img src="images/sidebar/sb2.png" alt=""></span> 
+						<span class="sb-name">Activity</span>
+					</a>
+					<ul class="nav-pills nav-stacked sub-nav-stacked" style="list-style-type:none;">
+						<li>
+							<a href="#">
+								<span class="sb-name">Network Config</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="sb-name">Network Map</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="sb-name">Floorplan Setup</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<hr>
+					<a href="#"><span class="fa-stack fa-lg pull-left"><img src="images/sidebar/sb3.png" alt=""></span>
+						<span class="sb-name">Venue Settings</span>
+					</a>
+					<ul class="nav-pills nav-stacked sub-nav-stacked" style="list-style-type:none;">
+						<li>
+							<a href="#">
+								<span class="sb-name">Network Config</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="sb-name">Network Map</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="sb-name">Floorplan Setup</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<hr>
+					<a href="#"> <span class="fa-stack fa-lg pull-left"><img src="images/sidebar/sb4.png" alt=""></span>
+						<span class="sb-name">Logs</span>
+					</a>
+				</li>
+			</ul>
+		</div><!-- #sidebar-wrapper -->
+		<div id="page-content-wrapper" class="padd-lR">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="card-box">
+							<div class="cb-center">
+								<div class="circle-chart">
+									<div id="demo-pie-1" class="pie-title-center" data-percent="175">
+										<span id="pie-value1" class="pie-value"></span> 
+									</div>
+								</div>
+							</div>
+							<div class="cb-caption">
+								<label>Active Connections</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="card-box">
+							<div class="cb-center">
+								<img src="images/venue/alert.gif" alt="alert">
+							</div>
+							<div class="cb-caption">
+								<label>5 Alerts</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="card-box">
+							<div class="cb-title">
+								<label>25 <span>MBPS</span></label>
+							</div>
+							<div class="cb-center cbt-center">
+								<div id="downlink" style="height:170px;width:370px;"></div>
+							</div>
+							<div class="cb-caption">
+								<label>Avg Downlink Speed</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="card-box">
+							<div class="cb-title">
+								<label>5 <span>MBPS</span></label>
+							</div>
+							<div class="cb-center cbt-center">
+								<div id="uplink" style="width: 370px;height:170px"></div>
+							</div>
+							<div class="cb-caption">
+								<label>Avg Uplink Speed</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="recent-Overview">
+							<div class="networkAct display-inline">
+								<label>Network Activity</label>
+							</div>
+							<div class="select-filter-Plan display-inline pull-right">
+								<select class="form-control display-inline">
+									<option selected="">LAST 15 MINUTES </option>
+									<option>LAST 10 MINUTES </option>
+									<option>LAST 5 MINUTES </option>
+									<option>LAST 20 MINUTES </option>
+									<option>LAST 25 MINUTES </option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="panel panel-default na-panel">
+							<div class="panel-heading">
+								<ul class="list-unstyled margin-btm-0">
+									<li class="dropdown">
+										<a href="#" class="pad0 dropdown-toggle np-dd" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+											No. of clients
+											<span class="caret"></span>
+										</a>
+										<ul class="dropdown-menu">
+											<li><a href="#">01</a></li>
+											<li><a href="#">02</a></li>
+											<li><a href="#">03</a></li>
+											<li><a href="#">04</a></li>
+										</ul>
+									</li>
+									<li>
+										<div class="checkbox check-style">
+											<label>
+												<input type="checkbox"> Alert
+											</label>
+										</div>
+									</li>
+									<li class="pull-right enlarge">
+										<a href="">
+											<img src="images/flooroverview/expand.png" alt="">
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="panel-body">
+								<img src="images/flooroverview/flooroverview.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="chart-box venus-chart1">
+							<div class="netflowData select-filter-Plan venue-filter">
+								<label>Netflow</label>
+							</div>
+							<div class="cb-section">
+								<div class="chart1">
+									<div class="chart1Section">
+										<div id="chart_div1" style="height:300px;margin-right:10px;"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="chart-box venus-chart1">
+							<div class="cb-section">
+								<div class="chart1">
+									<div class="select-filter-Plan venue-filter">
+										<select class="form-control ">
+											<option selected="">PEER TX/RX AVG. BYTES</option>
+											<option>LAST 10 MINUTES </option>
+											<option>LAST 5 MINUTES </option>
+											<option>LAST 20 MINUTES </option>
+											<option>LAST 25 MINUTES </option>
+										</select>
+									</div>
+									<div id="chart_div2" style="height:300px;margin-right:10px;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="chart-box">
+							<div class="device-coon-desc">
+								<label>32455 Device Connected</label>
+							</div>
+							<div id="piechart" style="height: 220px;"></div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="chart-box">
+							<div class="device-coon-desc">
+								<label>Types of Devices</label>
+							</div>
+							<div id="piechart2" style="height: 220px;"></div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="chart-box">
+							<div class="recent-heading">
+								<ul class="list-unstyled margin-btm-0">
+									<li class="dropdown profile-dash">
+										<a href="#" class="pad0 dropdown-toggle recent-heading-data" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+											Summary
+											<span class="caret"></span>
+										</a>
+										<ul class="dropdown-menu profile-dash-menu">
+											<li><a href="#">Action</a></li>
+											<li><a href="#">Another action</a></li>
+											<li><a href="#">Action</a></li>
+											<li><a href="#">Another action</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="recentDataSection scrollbar-inner" tabindex="0" style="overflow: hidden; outline: none;">
+								<div class="recent-venue">
+									<div class="recent-data">
+										<p>
+											Total VAPs
+										</p>
+										<label class="pull-right venue-time">2341</label>
+									</div>
+								</div>
+								<div class="recent-venue">
+									<div class="recent-data">
+										<p>
+											5 Ghz VAPs Count
+										</p>
+										<label class="pull-right venue-time">237</label>
+									</div>
+								</div>
+								<div class="recent-venue">
+									<div class="recent-data">
+										<p>
+											2.4 Ghz VAPs Count
+										</p>
+										<label class="pull-right venue-time">200</label>
+									</div>
+								</div>
+								<div class="recent-venue">
+									<div class="recent-data">
+										<p>
+											Active Gateways
+										</p>
+										<label class="pull-right venue-time">190</label>
+									</div>
+								</div>
+								<div class="recent-venue">
+									<div class="recent-data">
+										<p>
+											Number of Active Clients
+										</p>
+										<label class="pull-right venue-time">12345</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- js -->
+		<script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="js/d3.v3.min.js"></script>
+		<script type="text/javascript" src="js/jquery.appear.js"></script>
+		<script src="js/fabric.js" type="text/javascript"></script>
+		<script src="js/canvas.js" type="text/javascript"></script>
+		<script src="js/jq.panzoom.js" type="text/javascript"></script>
+		<script src="js/pie-chart.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+		<script type="text/javascript" src="js/jquery.canvasjs.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+
+		<!-- graph -->
+		<script type="text/javascript">
+
+		// piechart
+		$('#demo-pie-1').pieChart({
+			barColor: '#38a96f',
+			trackColor: '#b3b3b3',
+			lineCap: 'round',
+			lineWidth: 14,
+			animate: {
+				duration: 3500,
+				enabled: true
+			},
+
+			onStep: function (from, to, percent) {
+				var obj = document.getElementById('pie-value1');
+				obj.innerText = Math.round(percent);
+			}
+		});
+
+		//Bar chart
+		CanvasJS.addColorSet("colorset",
+			[
+			"#57a79c",
+			]);
+
+		$('#downlink').CanvasJSChart(
+		{
+			exportEnabled: false,
+			creditText: "",
+			creditRef: "",
+			animationEnabled: true,
+			// title: {
+			// 	text: "5 MBPS"
+			// 	fontColor: "red",
+			// },
+			legend: {
+				fontSize:17,
+				cursor: "default",
+				verticalAlign: "top",
+				horizontalAlign: "right",
+
+			},
+			axisX:{
+				title: '',
+				tickLength: 10,
+				tickColor: '#FFF',
+    		// minimum: 8,
+    		lineThickness: 0,
+    		gridThickness: 0,
+    		margin: 15,
+    		intervalType: 'year',
+    		labelFormatter: function(e){
+    			return  '';
+    		}
+    	},
+    	axisY:{
+    		tickLength: 0,
+    		lineThickness: 0,
+    		gridThickness: 0,
+    		margin: 15,
+    		labelFormatter: function(e){
+    			return  '';
+    		}
+    	},
+
+    	colorSet: "colorset",
+    	data: [
+    	{
+			type: "column", //change it to line, area, bar, pie, etc
+			lineThickness: 0,
+			fillOpacity: .8,
+			dataPoints: [
+			{ y: 1},{ y: 2.5 },{ y: 3 },{ y: 5 },{ y: 7 },
+			{ y: 7 },{ y: 8 },{ y: 6 },{ y: 6.5 },{ y: 10},
+			{ y: 8},{ y: 6.5 },{ y: 4 },{ y: 5 },{ y: 7 },				
+			]
+		},
+		]
+	});
+
+CanvasJS.addColorSet("colorset",
+	[
+	"#57a79c",
+	]);
+
+$('#uplink').CanvasJSChart(
+{
+	exportEnabled: false,
+	creditText: "",
+	creditRef: "",
+	animationEnabled: true,
+			// title: {
+			// 	text: "5 MBPS"
+			// 	fontColor: "red",
+			// },
+			legend: {
+				fontSize:17,
+				cursor: "default",
+				verticalAlign: "top",
+				horizontalAlign: "right",
+
+			},
+			axisX:{
+				title: '',
+				tickColor: '#FFF',
+    		// minimum: 8,
+    		lineThickness: 0,
+    		gridThickness: 0,
+    		margin: 15,
+    		intervalType: 'year',
+    		labelFormatter: function(e){
+    			return  '';
+    		}
+    	},
+    	axisY:{
+    		tickLength: 0,
+    		lineThickness: 0,
+    		gridThickness: 0,
+    		margin: 15,
+    		labelFormatter: function(e){
+    			return  '';
+    		}
+    	},
+
+    	colorSet: "colorset",
+    	data: [
+    	{
+			type: "column", //change it to line, area, bar, pie, etc
+			lineThickness: 0,
+			fillOpacity: .8,
+			dataPoints: [
+			{ y: 1},{ y: 2.5 },{ y: 3 },{ y: 5 },{ y: 7 },
+			{ y: 7 },{ y: 8 },{ y: 6 },{ y: 6.5 },{ y: 10},
+			{ y: 8},{ y: 6.5 },{ y: 4 },{ y: 5 },{ y: 7 },				
+			]
+		},
+		]
+	});
+
+CanvasJS.addColorSet("colorset",
+            [//colorSet Array
+            "#8DDF83",
+            "#3C97D0",
+            ]);	
+$('#chart_div2').CanvasJSChart(
+{
+	exportEnabled: false,
+	creditText: "",
+	creditRef: "",
+	animationEnabled: true,
+	title: {
+		text: ""
+	},
+	legend: {
+		fontSize:17,
+		cursor: "default",
+		verticalAlign: "top",
+		horizontalAlign: "right",
+
+	},
+	axisX:{
+		tickLength: 10,
+		tickColor: '#FFF',
+		lineThickness: 0,
+		gridThickness: 0,
+		margin: 15,
+		intervalType: 'year',
+		labelFormatter: function(e){
+			return  e.value+1940;
+		}
+	},
+	axisY:{
+		tickLength: 0,
+		lineThickness: 0,
+		gridThickness: 0,
+		margin: 15,
+		labelFormatter: function(e){
+			return  e.value/1000 +'k';
+		}
+	},
+
+	colorSet: "colorset",
+	data: [
+	{
+		type: "splineArea", 
+		showInLegend: true,
+		lineThickness: 0,
+		fillOpacity: .8,
+		legendMarkerType: "square",
+		legendText: "TX",
+		markerType: "none",
+		dataPoints: [
+		{ y: 10342,label: 2000 },{ y: 12342 },{ y: 14123 },{ y: 12231 },{ y: 12329 },
+		{ y: 14231 },{ y: 26123 },{ y: 10124 },{ y: 22234 },{ y: 25393},{ y: 27395},
+		{ y: 30000},{ y: 27000},{ y: 14765},{ y: 18736},{ y: 10000},{ y: 23451},
+		{ y: 12000},{ y: 7000},{ y: 19000},{ y: 25393},
+		]
+	},
+	{
+		type: "splineArea",
+		showInLegend: true,
+		fillOpacity: .8,
+		legendMarkerType: "square",
+		legendText: "RX",
+		markerType: "none",
+		dataPoints:[
+		{ y: 25393},{ y: 27395},{ y: 30000},{ y: 27000},{ y: 14765},{ y: 18736},
+		{ y: 10000},{ y: 23451},{ y: 12000},{ y: 7000},{ y: 19000},{ y: 25393},
+		{ y: 10342},{ y: 12342 },{ y: 14123 },{ y: 12231 },{ y: 2329 },
+		{ y: 14231 },{ y: 26123 },{ y: 10124 },{ y: 22234 },
+		]
+	},
+	]
+});
+
+	//Area chart
+	CanvasJS.addColorSet("colorset",
+		[
+		"#37C6F4",
+		"#4FC586",
+		"#F14E5A",
+		"#F79449",
+		]);	
+
+	$('#chart_div1').CanvasJSChart({
+		exportEnabled: false,
+		creditText: "",
+		creditRef: "",
+		animationEnabled: true,
+		title: {
+			text: "",
+		},
+		legend: {
+			fontFamily: 'arial',
+			fontSize:17,
+			cursor: "default",
+			verticalAlign: "top",
+			horizontalAlign: "right",
+		},
+		axisX:{
+			tickLength: 10,
+			tickColor: '#FFF',
+    		// minimum: 8,
+    		lineThickness: 0,
+    		gridThickness: 0,
+    		margin: 15,
+    		valueFormatString:  "hh.mmtt" ,
+    		labelFormatter: function(e){
+    			return  CanvasJS.formatDate( new Date(), "hh mm tt");
+    		},
+    		labelAngle: -89,
+    	},
+    	axisY:{
+    		tickLength: 0,
+    		lineThickness: 0,
+    		gridThickness: 0,
+    		margin: 15,
+    	},
+    	colorSet: "colorset",
+    	data: [
+    	{
+			type: "area", //change it to line, area, bar, pie, etc
+			showInLegend: true,
+			fillOpacity: .8,
+			legendMarkerType: "square",
+			legendText: "Downtime",
+			markerType: "none",
+			dataPoints: [
+			{ y: 3000},{ y: 3000 },{ y: 3000 },{ y: 3000 },{ y: 3329 },{ y: 3000},{ y: 3000 },{ y: 3000 },{ y: 3300 },{ y: 3329 },
+			{ y: 3000},{ y: 3000 },{ y: 4000 },{ y: 3000 },{ y: 3329 },
+			]
+		},
+		{
+			type: "area",
+			showInLegend: true,
+			fillOpacity: .8,
+			legendMarkerType: "square",
+			legendText: "Total",
+			markerType: "none",
+			dataPoints:[
+			{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: 3000},{ y: 11000 },{ y: 13000 },{ y: 15000 },{ y: 20329 },
+			]
+		},
+		{
+			type: "area",
+			showInLegend: true,
+			fillOpacity: .8,
+			legendMarkerType: "square",
+			legendText: "www",
+			markerType: "none",
+			dataPoints:[
+			{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: 20000},{ y: 21000 },{ y: 17000 },{ y: 31000 },{ y: 28329 },{ y: 33000},{ y: 32000 },{ y: 40000 },{ y: 21000 },{ y: 18329 },{ y: 20000},{ y: 21000 },{ y: 19000 },{ y: 21000 },{ y: 18329 },
+			{ y: 20000},{ y: 21000 },{ y: 17000 },{ y: 31000 },{ y: 28329 },{ y: 33000},{ y: 32000 },{ y: 40000 },{ y: 38000 },{ y: 41329 },{ y: 39000},{ y: 40000 },{ y: 36000 },{ y: 39000 },{ y: 42329 },
+			{ y: 20000},{ y: 21000 },{ y: 17000 },{ y: 31000 },{ y: 28329 },{ y: 33000},{ y: 32000 },{ y: 40000 },{ y: 21000 },{ y: 18329 },{ y: 20000},{ y: 21000 },{ y: 19000 },{ y: 21000 },{ y: 18329 },
+			{ y: 20000},{ y: 21000 },{ y: 17000 },{ y: 31000 },{ y: 28329 },{ y: 33000},{ y: 32000 },{ y: 40000 },{ y: 38000 },{ y: 41329 },{ y: 39000},{ y: 40000 },{ y: 36000 },{ y: 39000 },{ y: 42329 },
+			{ y: 20000},{ y: 21000 },{ y: 17000 },{ y: 31000 },{ y: 28329 },{ y: 33000},{ y: 32000 },{ y: 40000 },{ y: 21000 },{ y: 18329 },{ y: 20000},{ y: 21000 },{ y: 19000 },{ y: 21000 },{ y: 18329 },
+			]
+		},
+		{
+			type: "area",
+			showInLegend: true,
+			fillOpacity: .8,
+			legendMarkerType: "square",
+			legendText: "Chat",
+			markerType: "none",
+			dataPoints:[
+			{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},{ y: null},
+			{ y: 18000 },{ y: 22000 },{ y: 18000 },{ y: 21000 },{ y: 17110 },{ y: 30000 },{ y: 31000 },{ y: 31500 },{ y: 32000 },{ y: 31000 },{ y: 20010 },{ y: 10 },{ y: 10 },
+			]
+		},
+		],
+	});
+
+//Pie Chart
+CanvasJS.addColorSet("colorset",
+	[
+	"#37C6F4",
+	"#4FC586",
+	"#F14E5A",
+	"#F79449",
+	]);	
+CanvasJS.addColorSet("colorset",['#85d1fb', '#f14e5a', '#f79449', '#df7d5c', '#f1f494', '#79d58a']);	
+$('#piechart').CanvasJSChart(
+{
+	title:{
+		text: ""
+	},
+	width: this.width-250,
+	animationEnabled: true,
+	legend: {
+		fontSize:17,
+		dockInsidePlotArea: false,
+		cursor: "default",
+		verticalAlign: "center",
+		horizontalAlign: "right",
+	},
+	data: [
+	{        
+		type: "pie",   
+			// fillOpacity: .6,    
+			showInLegend: true,
+			startAngle: -90,
+			toolTipContent: "{y} - <strong>#percent%</strong>",
+			legendMarkerType: "square",
+			dataPoints: [
+			{  y: 40, legendText:"2478 Android",},
+			{  y: 20, legendText:"235 Mac OS",},
+			{  y: 20, legendText:"100 iOS",},
+			{  y: 20, legendText:"Others" ,},
+			{  y: 20, legendText:"Blackberry",},
+			{  y: 40, legendText:"Windows" },
+			]
+		}
+		]
+	});
+
+//Pie Chart
+CanvasJS.addColorSet("colorset",['#79d58a', '#85d1fb']);	
+$('#piechart2').CanvasJSChart(
+{
+	title:{
+		text: ""
+	},
+	width: this.width-250,
+	animationEnabled: true,
+	legend: {
+		fontSize:17,
+		dockInsidePlotArea: false,
+		cursor: "default",
+	},
+	data: [
+	{        
+		type: "pie",   
+			// fillOpacity: .6,    
+			showInLegend: true,
+			startAngle: -90,
+			toolTipContent: "{y} - <strong>#percent%</strong>",
+			legendMarkerType: "square",
+			dataPoints: [
+			{  y: 40, legendText:"2G",},
+			{  y: 20, legendText:"3G",},
+			]
+		}
+		]
+	});
+</script>
+</body>
+</html>
